@@ -9,7 +9,7 @@
 		{
 			"identifier" : "pd2_dhm_endscreen",
 			"host" : {
-				"meta" : "https://raw.githubusercontent.com/Sa1miakki/PD2AWIC/main/meta.json"
+				"meta" : "https://raw.githubusercontent.com/Sa1miakki/pd2-dhm-at-endscreen/main/meta.json"
 			}
 		}
 	],
