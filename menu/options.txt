@@ -1,0 +1,46 @@
+{
+	"menu_id" : "healmit_menu",
+	"parent_menu_id" : "blt_options",
+	"title" : "healmit_title",
+	"description":"healmit_desc"
+	"back_callback" : "healmit_closed",
+	"items" : [
+		{
+			"type" : "multiple_choice",
+			"id" : "healmit_lang_choice",
+			"title" : "healmit_lang_title",
+			"description" : "healmit_lang_desc",
+			"callback" : "healmit_lang_callback",
+			"items" : [
+				"healmit_lang_1",
+				"healmit_lang_2",
+                                "healmit_lang_3"
+			],
+			"value" : "healmit_lang_value"
+		},
+                {
+			"type" : "toggle",
+			"id" : "healmit_dmg_toggle",
+			"title" : "healmit_dmg_title",
+			"description" : "healmit_dmg_desc",
+			"callback" : "healmit_dmg_callback",
+			"value" : "healmit_dmg_enabled"
+		},
+                {
+			"type" : "toggle",
+			"id" : "healmit_heal_toggle",
+			"title" : "healmit_heal_title",
+			"description" : "healmit_heal_desc",
+			"callback" : "healmit_heal_callback",
+			"value" : "healmit_heal_enabled"
+		},
+                {
+			"type" : "toggle",
+			"id" : "healmit_mit_toggle",
+			"title" : "healmit_mit_title",
+			"description" : "healmit_mit_desc",
+			"callback" : "healmit_mit_callback",
+			"value" : "healmit_mit_enabled"
+		}
+	]
+}

@@ -1,0 +1,22 @@
+{
+	"healmit_title" : "D/H/M at end screen",
+	"healmit_desc":"结算界面显示伤害/治疗/抵挡",
+	"healmit_dmg_title":"显示伤害",
+	"healmit_dmg_desc":"显示伤害",
+	"healmit_heal_title":"显示治疗",
+	"healmit_heal_desc":"显示治疗",
+	"healmit_mit_title":"显示抵挡",
+	"healmit_mit_desc":"显示抵挡",
+        "healmit_lang_title":"语言",
+        "healmit_lang_desc":"切换语言",
+        "healmit_lang_1":"跟随游戏语言",
+	"healmit_lang_2":"English",
+        "healmit_lang_3":"简体中文",
+		
+		"victory_session_damage_2":"总计伤害:",
+		"victory_heal_amount":"总计治疗:",
+		"victory_mitigation_damage":"总计抵挡:"
+
+
+  
+}
