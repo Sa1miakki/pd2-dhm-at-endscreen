@@ -1,7 +1,9 @@
 Hooks:PreHook(PlayerDamage, "_calc_armor_damage", "_calc_mitigation_damage", function(self, attack_data, ...)
-    if attack_data.damage >= self:get_real_armor() and self:get_real_armor() ~= 0 then
+    if attack_data.damage > self:get_real_armor() and self:get_real_armor() ~= 0 then
 	    local mit = mit or attack_data.damage - self:get_real_armor()
 		managers.statistics:add_mitigation_damage(mit)
+	elseif attack_data.damage <= self:get_real_armor() and self:get_real_armor() ~= 0 then
+	    managers.statistics:add_mitigation_damage(attack_data.damage)
 	end
 end) 
 
