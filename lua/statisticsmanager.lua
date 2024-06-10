@@ -39,7 +39,7 @@ end
 
 function StatisticsManager:session_damage_string(peer_id)
 	local damage = self:session_damage(peer_id)
-	return managers.money:add_decimal_marks_to_string(tostring(damage))
+	return damage
 end
 
 function StatisticsManager:add_session_damage(damage, peer_id)
