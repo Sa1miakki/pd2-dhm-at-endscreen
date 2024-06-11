@@ -1,7 +1,7 @@
 Hooks:PreHook(StageEndScreenGui, "feed_statistics", "feed_statistics_smth", function(self, data, ...)
     data.mitigation_damage = string.format("%.2f", managers.statistics:mitigation_damage())
 	data.heal_amount = string.format("%.2f", managers.statistics:heal_amount())
-	data.session_damage_2 = tostring(managers.statistics:session_damage_string())
+	data.session_damage_2 = tostring(managers.statistics:session_damage_string()) / 2
 end) 
 
 
