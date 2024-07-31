@@ -1,7 +1,7 @@
 [
     {
         "ident" : "pd2_dhm_endscreen",
-        "version": "1.1",
+        "version": "1.2",
         "patchnotes_url" : "https://github.com/Sa1miakki/pd2-dhm-at-endscreen",
         "download_url" : "https://github.com/Sa1miakki/pd2-dhm-at-endscreen/archive/refs/heads/main.zip"
     }

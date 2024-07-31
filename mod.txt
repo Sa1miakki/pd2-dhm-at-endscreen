@@ -3,7 +3,7 @@
 	"description" : "Show your damage, self healing and mitigation at 'personal stats'.",
 	"author" : "Sa1miakki",
 	"contact" : "",
-	"version" : "1.1",
+	"version" : "1.2",
         "priority": -999,
         "updates" : [
 		{

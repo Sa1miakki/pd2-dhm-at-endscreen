@@ -1,7 +1,7 @@
 Hooks:PreHook(StageEndScreenGui, "feed_statistics", "feed_statistics_smth", function(self, data, ...)
-    data.mitigation_damage = string.format("%.2f", managers.statistics:mitigation_damage())
-	data.heal_amount = string.format("%.2f", managers.statistics:heal_amount())
-	data.session_damage_2 = tostring(managers.statistics:session_damage_string()) / 2
+    data.mitigation_damage = managers.money:add_decimal_marks_to_string(tostring(math.floor(managers.statistics:mitigation_damage())))--string.format("%.2f", managers.statistics:mitigation_damage())
+	data.heal_amount = managers.money:add_decimal_marks_to_string(tostring(math.floor(managers.statistics:heal_amount())))--string.format("%.2f", managers.statistics:heal_amount())
+	data.session_damage_2 = managers.money:add_decimal_marks_to_string(tostring(managers.statistics:session_damage_string() / 2))--tostring(managers.statistics:session_damage_string()) / 2
 end) 
 
 
@@ -19,3 +19,14 @@ Hooks:PreHook(StatsTabItem, "set_stats", "set_stats_smth", function(self, stats_
 	end
 end)
 
+--[[function MoneyManager:add_decimal_marks_to_string(string)
+	local total = string
+	local reverse = string.reverse(total)
+	local s = ""
+
+	for i = 1, string.len(reverse) do
+		s = s .. string.sub(reverse, i, i) .. (math.mod(i, 3) == 0 and i ~= string.len(reverse) and self._cash_tousand_separator or "")
+	end
+
+	return string.reverse(s)
+end]]
